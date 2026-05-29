@@ -13,17 +13,17 @@ const expertise = [
   },
   {
     area: 'Сопровождение',
-    items: ['Тестирование', 'Мониторинг', 'Оптимизация', '24/7 поддержка'],
+    items: ['Тестирование', 'Мониторинг', 'Оптимизация', 'Поддержка'],
   },
 ]
 
 const services = [
-  { title: 'Разработка', desc: 'Проектирую и разрабатываю ПО под ключ — от архитектуры до деплоя.' },
-  { title: 'Настройка', desc: 'Настройка серверов, кластеров, окружений. Всё, что нужно для стабильной работы.' },
-  { title: 'Тестирование', desc: 'Модульное, интеграционное, нагрузочное. Гарантия качества продукта.' },
+  { title: 'Разработка', desc: 'Проектируем и разрабатываем ПО под ключ — от архитектуры до деплоя.' },
+  { title: 'Настройка', desc: 'Настройка серверов, кластеров, окружений. Стабильность и отказоустойчивость.' },
+  { title: 'Тестирование', desc: 'Модульное, интеграционное, нагрузочное. Гарантируем качество.' },
   { title: 'Сопровождение', desc: 'Поддержка, мониторинг, обновления. Ваш продукт в надёжных руках.' },
-  { title: 'Консультирование', desc: 'Аудит архитектуры, ревью кода, стратегия развития проекта.' },
-  { title: 'Управление командами', desc: 'Организация процессов, контроль сроков, менторство разработчиков.' },
+  { title: 'Консультирование', desc: 'Аудит архитектуры, ревью кода, стратегия развития.' },
+  { title: 'Аутстафф', desc: 'Предоставляем разработчиков под ваши задачи с контролем качества.' },
 ]
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
             PAVKRAFT<span className="text-cyan-400"> Labs</span>
           </span>
           <div className="hidden items-center gap-8 text-sm text-zinc-400 sm:flex">
-            <a href="#about" className="transition-colors hover:text-white">Обо мне</a>
+            <a href="#team" className="transition-colors hover:text-white">Команда</a>
             <a href="#expertise" className="transition-colors hover:text-white">Компетенции</a>
             <a href="#services" className="transition-colors hover:text-white">Услуги</a>
             <a href="#contact" className="transition-colors hover:text-white">Контакты</a>
@@ -47,16 +47,15 @@ function App() {
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(6,182,212,0.15)_0%,_transparent_60%)]" />
         <div className="relative text-center">
-          <div className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-500">
-            Инженер-программист &middot; Инженер-архитектор
-          </div>
           <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-7xl">
             PAVKRAFT
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Labs</span>
           </h1>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-zinc-400">
-            Разработка, инфраструктура, управление командами.
-            Проектирую и сопровождаю цифровые продукты от идеи до релиза.
+          <p className="mx-auto mb-2 max-w-2xl text-lg text-zinc-400">
+            Команда разработчиков под руководством опытного инженера и лида.
+          </p>
+          <p className="mx-auto mb-8 max-w-xl text-sm text-zinc-500">
+            Разработка &middot; Инфраструктура &middot; Управление
           </p>
           <a
             href="#contact"
@@ -67,28 +66,29 @@ function App() {
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="border-t border-white/5 px-6 py-24">
+      {/* Team */}
+      <section id="team" className="border-t border-white/5 px-6 py-24">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-12 text-center text-3xl font-bold">
-            / <span className="text-cyan-400">Обо мне</span>
+            / <span className="text-cyan-400">Команда</span>
           </h2>
           <div className="mx-auto mb-12 max-w-2xl text-center text-zinc-400 leading-relaxed">
             <p className="mb-4">
-              Инженер-программист с образованием инженера-архитектора. За плечами — настройка и администрирование
+              PAVKRAFT Labs — это команда разработчиков под руководством инженера с двумя образованиями:
+              инженера-программиста и инженера-архитектора. За плечами руководителя — настройка и администрирование
               Windows и Linux серверов, кластерных систем, управление командами разработчиков.
             </p>
             <p>
-              Объединяю системный подход архитектора с инженерной точностью программиста.
-              Понимаю продукт целиком — от кода до инфраструктуры, от задачи до процесса.
+              Мы объединяем системный подход архитектора с инженерной точностью программиста.
+              Понимаем продукт целиком — от кода до инфраструктуры, от задачи до процесса.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
             {[
-              { title: 'Программирование', desc: 'Проектирование и разработка приложений, API, интеграции. Современный стек, чистый код.' },
+              { title: 'Программирование', desc: 'Проектируем и разрабатываем приложения, API, интеграции. Современный стек, чистый код.' },
               { title: 'Инфраструктура', desc: 'Серверы, сети, кластеры, CI/CD, облачные решения. Надёжность и отказоустойчивость.' },
-              { title: 'Архитектура систем', desc: 'Проектирование архитектуры ПО и распределённых систем с учётом масштабирования.' },
-              { title: 'Управление', desc: 'Team Lead, организация процессов, контроль качества. Опыт руководства командами разработки.' },
+              { title: 'Архитектура систем', desc: 'Проектируем архитектуру ПО и распределённых систем с учётом масштабирования.' },
+              { title: 'Управление', desc: 'Team Lead, организация процессов, контроль качества. Руководство командами разработки.' },
             ].map((item) => (
               <div key={item.title} className="rounded-xl border border-white/5 bg-white/5 p-6 backdrop-blur-sm">
                 <h3 className="mb-2 font-semibold text-cyan-400">{item.title}</h3>
@@ -147,7 +147,7 @@ function App() {
             / <span className="text-cyan-400">Контакты</span>
           </h2>
           <p className="mb-8 text-zinc-400">
-            Открыт к предложениям. Пишите — обсудим ваш проект.
+            Готовы обсудить ваш проект? Пишите.
           </p>
           <a
             href="https://github.com/pokalo"
