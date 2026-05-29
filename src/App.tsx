@@ -156,6 +156,13 @@ function App() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
+              href="https://t.me/PAVkraft_bot"
+              target="_blank"
+              className="inline-block rounded-full bg-cyan-500 px-8 py-3 text-sm font-semibold text-black transition-all hover:bg-cyan-400"
+            >
+              Telegram бот
+            </a>
+            <a
               href="https://github.com/pokalo"
               target="_blank"
               className="inline-block rounded-full border border-white/10 px-8 py-3 text-sm font-medium transition-all hover:border-cyan-500/50 hover:text-cyan-400"
@@ -165,7 +172,7 @@ function App() {
             <a
               href="https://freelance.ru/andreypokalo"
               target="_blank"
-              className="inline-block rounded-full bg-cyan-500 px-8 py-3 text-sm font-semibold text-black transition-all hover:bg-cyan-400"
+              className="inline-block rounded-full border border-white/10 px-8 py-3 text-sm font-medium transition-all hover:border-cyan-500/50 hover:text-cyan-400"
             >
               freelance.ru
             </a>
