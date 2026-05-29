@@ -48,6 +48,7 @@ function App() {
             <a href="#team" className="transition-colors hover:text-white">Команда</a>
             <a href="#expertise" className="transition-colors hover:text-white">Компетенции</a>
             <a href="#services" className="transition-colors hover:text-white">Услуги</a>
+            <a href="#projects" className="transition-colors hover:text-white">Проекты</a>
             <a href="#contact" className="transition-colors hover:text-white">Контакты</a>
           </div>
         </div>
@@ -149,6 +150,31 @@ function App() {
                 <p className="text-sm leading-relaxed text-zinc-500">{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="border-t border-white/5 bg-white/[0.01] px-6 py-24">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold">
+            / <span className="text-cyan-400">Проекты</span>
+          </h2>
+          <div className="mx-auto max-w-xl">
+            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-cyan-500/30">
+              <h3 className="mb-1 font-semibold group-hover:text-cyan-400">VPN Client</h3>
+              <p className="mb-3 text-sm leading-relaxed text-zinc-500">
+                Бесплатный WireGuard VPN-клиент для Android с интеграцией Telegram-бота.
+                Обход блокировок, шифрование, мониторинг трафика.
+              </p>
+              <a
+                href="https://pokalo.github.io/vpn-client-app/"
+                target="_blank"
+                className="text-sm text-cyan-400 transition-colors hover:text-cyan-300"
+              >
+                pokalo.github.io/vpn-client-app →
+              </a>
+            </div>
           </div>
         </div>
       </section>
