@@ -54,7 +54,7 @@ function App() {
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Labs</span>
           </h1>
           <p className="mx-auto mb-2 max-w-2xl text-lg text-zinc-400">
-            Команда под руководством инженера с 25-летним стажем.
+            Команда разработчиков PAVKRAFT Labs с серьёзным стажем.
           </p>
           <p className="mx-auto mb-8 max-w-xl text-sm text-zinc-500">
             Инфраструктура &middot; AI/LLM &middot; Open Source &middot; Высоконагрузки
@@ -76,7 +76,7 @@ function App() {
           </h2>
           <div className="mx-auto mb-12 max-w-2xl text-center text-zinc-400 leading-relaxed">
             <p className="mb-4">
-              PAVKRAFT Labs — команда под руководством инженера с 25-летним стажем, двумя образованиями
+              PAVKRAFT Labs — команда разработчиков с серьёзным стажем, двумя образованиями
               (инженер-программист и инженер-архитектор) и опытом управления командами разработчиков.
             </p>
             <p className="mb-4">
