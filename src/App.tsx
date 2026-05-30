@@ -75,6 +75,25 @@ function App() {
             Связаться
           </a>
         </div>
+
+        <div className="absolute bottom-12 left-0 right-0 overflow-hidden border-t border-white/5 py-3">
+          <div className="marquee flex text-sm text-zinc-500">
+            {[
+              'Postfix / Exim', 'MySQL', 'PostgreSQL', 'MongoDB', 'Nginx / Apache',
+              'WireGuard', 'Docker / Podman', 'Prometheus / Grafana', 'Redis',
+              'CI/CD (GitLab / GitHub)', 'Ansible', 'Kubernetes', 'RabbitMQ',
+              'OpenVPN', 'HAProxy', 'Zabbix', 'Graylog', 'MinIO', 'Keycloak',
+              'Postfix / Exim', 'MySQL', 'PostgreSQL', 'MongoDB', 'Nginx / Apache',
+              'WireGuard', 'Docker / Podman', 'Prometheus / Grafana', 'Redis',
+              'CI/CD (GitLab / GitHub)', 'Ansible', 'Kubernetes', 'RabbitMQ',
+              'OpenVPN', 'HAProxy', 'Zabbix', 'Graylog', 'MinIO', 'Keycloak',
+            ].map((item, i) => (
+              <span key={i} className="mx-6 shrink-0 whitespace-nowrap">
+                <span className="text-cyan-500/50">#</span> {item}
+              </span>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Team */}
