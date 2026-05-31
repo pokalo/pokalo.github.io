@@ -179,7 +179,7 @@ function App() {
           <h2 className="mb-12 text-center text-3xl font-bold">
             / <span className="text-cyan-400">Проекты</span>
           </h2>
-          <div className="mx-auto max-w-xl">
+          <div className="grid gap-6 md:grid-cols-2">
             <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-cyan-500/30">
               <h3 className="mb-1 font-semibold group-hover:text-cyan-400">VPN Client</h3>
               <p className="mb-3 text-sm leading-relaxed text-zinc-500">
@@ -192,6 +192,20 @@ function App() {
                 className="text-sm text-cyan-400 transition-colors hover:text-cyan-300"
               >
                 pokalo.github.io/vpn-client-app →
+              </a>
+            </div>
+            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-cyan-500/30">
+              <h3 className="mb-1 font-semibold group-hover:text-cyan-400">Aerophone</h3>
+              <p className="mb-3 text-sm leading-relaxed text-zinc-500">
+                Слуховой ассистент с шумоподавлением и эквалайзером.
+                Превращает смартфон в профессиональный слуховой аппарат.
+              </p>
+              <a
+                href="https://pokalo.github.io/aerophone/"
+                target="_blank"
+                className="text-sm text-cyan-400 transition-colors hover:text-cyan-300"
+              >
+                pokalo.github.io/aerophone →
               </a>
             </div>
           </div>
