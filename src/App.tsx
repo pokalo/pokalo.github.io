@@ -208,6 +208,20 @@ function App() {
                 pokalo.github.io/aerophone →
               </a>
             </div>
+            <div className="group rounded-xl border border-white/5 bg-white/[0.02] p-6 transition-all hover:border-cyan-500/30">
+              <h3 className="mb-1 font-semibold group-hover:text-cyan-400">OBD Scanner</h3>
+              <p className="mb-3 text-sm leading-relaxed text-zinc-500">
+                Умный диагностический сканер для Android через ELM327.
+                Чтение ошибок, живые параметры, AI-анализ, VIN-декодинг.
+              </p>
+              <a
+                href="https://pokalo.github.io/obd-scanner-site/"
+                target="_blank"
+                className="text-sm text-cyan-400 transition-colors hover:text-cyan-300"
+              >
+                pokalo.github.io/obd-scanner-site →
+              </a>
+            </div>
           </div>
         </div>
       </section>
