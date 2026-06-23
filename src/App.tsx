@@ -41,9 +41,9 @@ function App() {
     <div className="min-h-screen bg-[#0a0a0f] text-white">
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#0a0a0f]/80 backdrop-blur-lg">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <span className="text-lg font-bold tracking-wider">
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-lg font-bold tracking-wider hover:opacity-80 transition-opacity">
             PAVKRAFT<span className="text-cyan-400"> Labs</span>
-          </span>
+          </a>
           <div className="hidden items-center gap-8 text-sm text-zinc-400 sm:flex">
             <a href="#team" className="transition-colors hover:text-white">Команда</a>
             <a href="#expertise" className="transition-colors hover:text-white">Компетенции</a>
